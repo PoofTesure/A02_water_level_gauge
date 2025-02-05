@@ -6,5 +6,5 @@ Using emelianov's modbus library, this project read or write the holding registe
 ESP32 used in this project is connected to RS485 module using ESP32's serial pin.
 # Usage
 Create a class with modbus object and the address of the A02
-Use readRange function to get real-time measurement.
-Use setAddress to change the current adress of the A02.
+- Use readRange function to get real-time measurement.
+- Use setAddress to change the current adress of the A02.
