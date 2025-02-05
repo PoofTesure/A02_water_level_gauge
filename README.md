@@ -5,6 +5,6 @@ This project uses A02 Ultrasonic sensor with Modbus interface on ESP32. On this 
 Using emelianov's modbus library, this project read or write the holding register of the A02 synchronously and output the water level to a LCD.
 ESP32 used in this project is connected to RS485 module using ESP32's serial pin.
 # Usage
-Create a class with modbus object and the address of the A02;
+Create a class with modbus object and the address of the A02
 Use readRange function to get real-time measurement.
-User setAddress to change the current adress of the A02.
+Use setAddress to change the current adress of the A02.
