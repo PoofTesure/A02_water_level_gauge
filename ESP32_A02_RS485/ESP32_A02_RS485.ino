@@ -1,5 +1,6 @@
 #define RX_PIN      16        //RX2 
 #define TX_PIN      17        //TX2 
+#define SWITCH_PIN  5         //RS485 RX/TX switch
 // #define LED_BUILTIN 25
 /* macro definition -----------------------------------------------------------------------*/
 #define SOFT_VERSION "MB-211123-A0"  //Software version
@@ -60,7 +61,7 @@ void setup()
     lcd.init();                      // initialize the lcd 
     // Print a message to the LCD.
     lcd.backlight();
-    mb.begin(&Serial2,5,false);
+    mb.begin(&Serial2,SWITCH_PIN,false);
     mb.master();
     //sensor_1.setAddress(0x05);
 }
