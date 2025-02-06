@@ -4,6 +4,8 @@ Simple water level gauge using  multiple A02 (Modbus) ultrasonic
 This project uses A02 Ultrasonic sensor with Modbus interface on ESP32. On this repositories, i created a simple modbus wrapper for simpler usage.
 Using emelianov's modbus library, this project read or write the holding register of the A02 synchronously and output the water level to a LCD.
 ESP32 used in this project is connected to RS485 module using ESP32's serial pin.
+# Circuit
+Connect A and B terminal from RS485 to A02 and daisy chain A and B terminal to the next A02
 # Usage
 Create a class with modbus object and the address of the A02
 - Use readRange function to get real-time measurement.
